@@ -1,0 +1,7 @@
+function exacte(nte,nxe)
+te=linspace(0,0.01,nte);
+xe=linspace(0,1,nxe);
+[tte,xxe]=meshgrid(te,xe);
+mesh(tte,xxe,sin(xxe)*exp(-tte)),xlabel temps,ylabel espace,zlabel quantité-de-chaleur
+legend('solution exacte.')
+%
